@@ -74,18 +74,6 @@ public class StatsMapsActivity extends FragmentActivity implements OnMapReadyCal
 
         }
         else{
-//            Snackbar snackbar = Snackbar.make(findViewById(R.id.relative),"Oops!,Your internet might not be working.",Snackbar.LENGTH_INDEFINITE);
-//            snackbar.setAction("RETRY", v-> {
-//                if(isNetworkAvailable()) {
-//                    getDataFromAPI();
-//                }
-//                else {
-//                    snackbar.dismiss();
-//                    snackbar.show();
-//                }
-//            });
-//            snackbar.setActionTextColor(Color.RED);
-//            snackbar.show();
             startActivity(new Intent(this,InternetCheckActivity.class));
             finish();
         }
@@ -127,9 +115,6 @@ public class StatsMapsActivity extends FragmentActivity implements OnMapReadyCal
     private void handelSearchBar() {
 
         androidx.appcompat.widget.SearchView search_bar = findViewById(R.id.search_bar);
-//        search_bar.setSelected(true);
-//        search_bar.requestFocus();
-//        search_bar.setFocusable(true);
         search_bar.setQueryHint("Search Country");
         search_bar.setOnClickListener(v->{
             Log.e("ButtonClicked","buttonclicked");

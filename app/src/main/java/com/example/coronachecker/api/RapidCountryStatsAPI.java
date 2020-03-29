@@ -20,7 +20,7 @@ public class RapidCountryStatsAPI extends AsyncTask<String,String,String> {
                     .url(strings[0])
                     .get()
                     .addHeader("x-rapidapi-host", "coronavirus-monitor.p.rapidapi.com")
-                    .addHeader("x-rapidapi-key", "a05dea6e79msh4c763323e971e65p14eaa4jsna08b22ec980a")
+                    .addHeader("x-rapidapi-key", <Your API Key>)
                     .build();
 
             Response response = client.newCall(request).execute();

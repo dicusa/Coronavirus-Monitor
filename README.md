@@ -18,6 +18,11 @@ Its an Android application to track cases related Covid-19 cases across the worl
  4.7 Active Cases
  4.8 Total Cases per 1M population
 
+### To use Rapid API
+1. Visit https://rapidapi.com/astsiatsko/api/coronavirus-monitor and read the documentation.
+2. Create your account and generate your API Key and save it.
+3. You can paste your API Key in the specific location: \app\src\main\java\com\example\coronachecker\api
+
 ### To use Google Maps feature(In Android Studio)
 1. Install the Google Play services SDK from SDK manager.
 2. Create a Google Maps Activity inside your project.
