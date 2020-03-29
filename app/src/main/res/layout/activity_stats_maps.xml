@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsMapsActivity"
+    />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="10dp"
+        android:focusableInTouchMode="true"
+        android:elevation="5dp"
+        android:queryHint="Search Country"
+        map:defaultQueryHint="Search Country"
+        android:background="@drawable/search_bg"
+        />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="70dp"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+
+        />
+    <ImageView
+        android:id="@+id/transition_current_scene"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/gps_bt"
+        />
+</RelativeLayout>

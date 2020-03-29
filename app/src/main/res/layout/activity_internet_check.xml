@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"><data/>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InternetCheckActivity"
+    android:background="@drawable/no_internet">
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="150dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+
+        >
+<Button
+    android:id="@+id/retry_bt"
+    android:layout_width="150dp"
+    android:layout_height="?attr/actionBarSize"
+    android:text="Retry"
+    android:textSize="16sp"
+    android:textColor="#485871"
+    android:background="@drawable/retry_button_bg"
+    android:visibility="visible"
+    />
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="true"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data/>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".CountryDetails">
+
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Country Name"
+            android:textSize="28sp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="7dp"
+            android:background="#000000"/>
+        <TextView
+            android:id="@+id/total_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:text="Total cases:"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/deaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:text="Deaths: "
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/total_recovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:text="Total Recovered:"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/new_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:text="New Cases: "
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/new_deaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:text="New Deaths: "
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/serious_critical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:text="Serious Critical: "
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/active_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:text="Active Cases: "
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/total_cases_per_1m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:text="Total Cases Per_1m_population: "
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+</layout>

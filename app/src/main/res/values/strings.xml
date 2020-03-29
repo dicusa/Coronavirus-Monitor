@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Coronavirus Monitor</string>
+    <string name="title_activity_stats_maps">Map</string>
+</resources>
